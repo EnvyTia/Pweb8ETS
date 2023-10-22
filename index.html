@@ -5,89 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETS PWeb</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body background="imgs/library.jpg">
+<body>
+  <!-- <div class="background"> -->
+    
 
     <!-- navbar -->
-    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-        <a class="navbar-brand" href="#">Libr.Arry.io</a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">Keanggotaan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Peminjaman buku</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#scrollspyHeading3">List</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading5">Yang akan datang</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <!-- <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-        <h4 id="scrollspyHeading1">Update</h4>
-        <p>Koleksi baru perpustakaan hadir untuk melengkapi keperluanmu</p>
-      </div> -->
-
-      <section class="sale">
-        <div class="container">
-            <div class="row justify-content-center">
-
-
-                <!-- <div class="col-12 col-md-6">
-                    <div class="card">
-                        <img src="imgs/2.jpg" alt="picsale1" class="card-img-top">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="card">
-                        <h1>Update</h1>
-                        <p>Koleksi baru perpustakaan yang hadir untuk melengkapi harimu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate pretium efficitur. Mauris fermentum ante non erat vehicula dictum. Praesent dictum ultricies laoreet. Sed fermentum, risus at placerat sodales, metus nisl sodales nunc, quis convallis nisi ligula in lacus.</p>
-                        <a href="#" class="btn btn-primary">See More</a>
-                    </div>
-                </div> -->
-
-                <div class="col-12 col-md-12">
-                    <div class="card-transparent">
-                        <!-- <div class="card" style="background-color: rgba(219, 169, 133, 0.92); ">Update</div> -->
-                        <div class="card" style="background-color: rgba(255,255,255, 0.7); ">
-                            <h1>Update</h1>
-                            <p>Koleksi baru perpustakaan hadir untuk melengkapi harimu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate pretium efficitur. Mauris fermentum ante non erat vehicula dictum. Praesent dictum ultricies laoreet. Sed fermentum, risus at placerat sodales, metus nisl sodales nunc, quis convallis nisi ligula in lacus.</p>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-primary">See More</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <!-- <div class="card">
-                        <img src="imgs/5.jpg" alt="picsale1" class="card-img-top">
-                    </div> -->
-                </div>
-
-                <!-- <div class="col-12 col-md-6">
-                    <div class="card">
-                        <img src="imgs/6.jpg" alt="picsale1" class="card-img-top">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="card">
-                        <h1>Regular Castle</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate pretium efficitur. Mauris fermentum ante non erat vehicula dictum. Praesent dictum ultricies laoreet. Sed fermentum, risus at placerat sodales, metus nisl sodales nunc, quis convallis nisi ligula in lacus.</p>
-                        <a href="#" class="btn btn-primary">See More</a>
-                    </div>
-                </div> -->
-                
-            </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Lib<span>.Arry</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hot">Terbaru</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#list">Koleksi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pengguna
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profil</a></li>
+                <li><a class="dropdown-item" href="#">Peminjaman</a></li>
+                <li><a class="dropdown-item" href="#login">Login</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+      <!-- navbar end -->
+     <!-- hero section  start-->
+     <section class="hero" id="home">
+      <main class="content">
+        <h1>Lib.Arry</h1>
+        <p>Hadir untuk memenuhi kebutuhan literasi harianmu</p>
+        <!-- <a href="#" class="cta"></a> -->
+      </main>
+     </section>
+     <!-- hero section  end-->
+
+
+     <!-- latest -->
+     <section id="hot" class="hot">
+      <h2>HOT</h2>
+
+      <div class="col-12 col-md-12">
+        <div class="card-transparent">
+            <!-- <div class="card" style="background-color: rgba(219, 169, 133, 0.92); ">Update</div> -->
+            <div class="card" style="background-color: rgba(255,255,255, 0.7); ">
+                <h1>Sherlock holmes</h1>
+                <p>Koleksi baru perpustakaan hadir untuk melengkapi harimu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate pretium efficitur. Mauris fermentum ante non erat vehicula dictum. Praesent dictum ultricies laoreet. Sed fermentum, risus at placerat sodales, metus nisl sodales nunc, quis convallis nisi ligula in lacus.</p>
+            </div>
+            <div>
+                <a href="#" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+    </div>
+      <div class="col-12 col-md-12">
+        <div class="card-transparent">
+            <!-- <div class="card" style="background-color: rgba(219, 169, 133, 0.92); ">Update</div> -->
+            <div class="card" style="background-color: rgba(255,255,255, 0.7); ">
+                <h1>Manusia Setengah Salmon</h1>
+                <p>Kisah perjalanan seorang pemuda yang ditulis dengan gaya komedi, kini hadir kembali. pilihan terbaik setelah lelahnya nugas dimalam hari. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <a href="#" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+    </div>
+
+    </section>
+     <!-- latest -->
+      <!-- list section -->
+      <section id="list" class="list">
+        <h2>Koleksi</h2>
+        <div class="d-flex flex-wrap justify-center justify-content-between m-auto">
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://mangadex.org/covers/c52b2ce3-7f95-469c-96b0-479524fb7a1a/5e54c679-75d5-4645-b69e-eb46e66f3870.jpg" class="card-img-top" alt="jjk">
+          <div class="card-body">
+            <h5 class="card-title">Jujutsu Kaisen</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem at vel suscipit?</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://mangadex.org/covers/008cda8e-2c41-4c89-8c97-62bd17af0fdf/0d7e0681-90c2-4e6d-92bc-5c7788efb943.jpg" class="card-img-top" alt="niizuma">
+          <div class="card-body">
+            <h5 class="card-title">Okusama wa niizuma-chan</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem at vel suscipit?</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://mangadex.org/covers/a3e48f50-d3d1-4d08-b54a-a3b7ad4b0801/92f42852-595d-4ed5-aec3-545fc7932187.jpg" class="card-img-top" alt="yaiteru">
+          <div class="card-body">
+            <h5 class="card-title">Yaiteru Futari</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem at vel suscipit?</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+  
+        </div>
+      </div>
+
       </section>
 
+      <section>
+        <form class="login" id="login">
+          <fieldset>
+              <legend class="legend">Login</legend>
+              <div class="input">
+                  <input type="email" placeholder="Email" id="email" required />
+                  <span><i class="fa fa-envelope-o"></i></span>
+              </div>
+              <div class="input">
+  
+                  <input type="password" placeholder="Password" id="password" required />
+                  <span><i class="fa fa-lock"></i></span>
+                  <br>
+                  <label for="checkbox">show password</label>
+                  <input type="checkbox" class="checkbox" id="checkbox" onclick="myFunction()">
+               
+              </div>
+  
+      
+              <button type="submit" class="submit" id="button" onclick="onSubmit()">OK<i class="fa fa-long-arrow-right"></i></button>
+      
+          </fieldset>
+      
+          <div class="feedback" id="feedback">
+              login successfully <br />
+          </div>
+      
+      </form>
+      <!-- script -->
+    </section>
+    <!-- list section -->
+    <script src="main.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+  <!-- </div> -->
 </body>
 </html>
